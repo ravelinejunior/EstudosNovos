@@ -118,10 +118,9 @@
         android:text="Calculadora"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultado_id"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.126" />
 
     <Button
         android:id="@+id/listView_button_id"
@@ -131,8 +130,10 @@
         android:text="ListView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toEndOf="@+id/calculador_id_activity"
-        app:layout_constraintTop_toTopOf="@+id/calculador_id_activity" />
+        app:layout_constraintTop_toTopOf="@+id/calculador_id_activity"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/recyclerView_id_button"
@@ -149,4 +150,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/calculador_id_activity"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cardView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CardView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/listView_button_id"
+        app:layout_constraintStart_toStartOf="@+id/listView_button_id"
+        app:layout_constraintTop_toBottomOf="@+id/calculador_id_activity"
+        app:layout_constraintVertical_bias="0.088" />
 </androidx.constraintlayout.widget.ConstraintLayout>

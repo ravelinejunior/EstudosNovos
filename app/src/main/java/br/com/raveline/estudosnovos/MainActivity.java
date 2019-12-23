@@ -2,6 +2,7 @@ package br.com.raveline.estudosnovos;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button calculadoraActbotao;
     private Button listViewButton;
     private Button recyclerViewButton;
+    private Button cardViewButton;
 
 
 
@@ -59,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,RecyclerViewActivity.class);
+                startActivity(i);
+            }
+        });
+
+        cardViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, CardViewActivity.class);
                 startActivity(i);
             }
         });
@@ -143,5 +153,6 @@ public class MainActivity extends AppCompatActivity {
         listViewButton = findViewById(R.id.listView_button_id);
         resultado = findViewById(R.id.resultado_id);
         recyclerViewButton = findViewById(R.id.recyclerView_id_button);
+        cardViewButton = findViewById(R.id.cardView_id);
     }
 }
