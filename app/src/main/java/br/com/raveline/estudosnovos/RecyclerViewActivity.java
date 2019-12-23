@@ -1,17 +1,21 @@
 package br.com.raveline.estudosnovos;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 import br.com.raveline.estudosnovos.adapter.AdapterRecyclerView;
+import br.com.raveline.estudosnovos.adapter.RecyclerItemClickListener;
 import model.Noticia;
 
 public class RecyclerViewActivity extends AppCompatActivity {
@@ -29,7 +33,6 @@ public class RecyclerViewActivity extends AppCompatActivity {
         noticiaList = new ArrayList<>();
         criarNoticias();
 
-
         //configurar br.com.raveline.estudosnovos.adapter -- recebe os dados, formata os dados
         adapterRecyclerView = new AdapterRecyclerView(noticiaList);
 
@@ -38,6 +41,33 @@ public class RecyclerViewActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapterRecyclerView);
+
+        //setando evento de listener
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(
+                getApplicationContext(),
+                recyclerView,
+                new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+                        Noticia noticia = noticiaList.get(position);
+                        Toast.makeText(RecyclerViewActivity.this, noticia.getNome()+"\n "+noticia.getDescricao(), Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+                         Noticia noticia = noticiaList.get(position);
+                        Toast.makeText(RecyclerViewActivity.this, noticia.getNome()+" \n\n "+noticia.getDescricao(), Toast.LENGTH_SHORT).show();
+
+                    }
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                    }
+                }
+
+
+        ));
 
     }
 
