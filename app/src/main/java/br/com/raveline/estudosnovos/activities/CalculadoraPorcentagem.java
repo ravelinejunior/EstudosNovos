@@ -1,4 +1,4 @@
-package br.com.raveline.estudosnovos;
+package br.com.raveline.estudosnovos.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 

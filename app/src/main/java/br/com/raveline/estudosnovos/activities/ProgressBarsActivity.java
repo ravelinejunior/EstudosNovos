@@ -1,4 +1,4 @@
-package br.com.raveline.estudosnovos;
+package br.com.raveline.estudosnovos.activities;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import br.com.raveline.estudosnovos.R;
 
 public class ProgressBarsActivity extends AppCompatActivity {
     private ProgressBar progressBarCircular;

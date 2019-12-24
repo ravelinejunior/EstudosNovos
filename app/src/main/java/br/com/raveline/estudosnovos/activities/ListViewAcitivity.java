@@ -1,4 +1,4 @@
-package br.com.raveline.estudosnovos;
+package br.com.raveline.estudosnovos.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import br.com.raveline.estudosnovos.R;
 
 public class ListViewAcitivity extends AppCompatActivity {
     private ListView listLocalViagens;

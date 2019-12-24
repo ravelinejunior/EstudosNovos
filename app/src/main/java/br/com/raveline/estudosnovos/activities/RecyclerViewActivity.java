@@ -1,11 +1,9 @@
-package br.com.raveline.estudosnovos;
+package br.com.raveline.estudosnovos.activities;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,9 +12,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.raveline.estudosnovos.R;
 import br.com.raveline.estudosnovos.adapter.AdapterRecyclerView;
 import br.com.raveline.estudosnovos.adapter.RecyclerItemClickListener;
-import model.Noticia;
+import br.com.raveline.estudosnovos.model.Noticia;
 
 public class RecyclerViewActivity extends AppCompatActivity {
     private RecyclerView recyclerView;

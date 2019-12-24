@@ -1,8 +1,7 @@
-package br.com.raveline.estudosnovos;
+package br.com.raveline.estudosnovos.activities;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
+
+import br.com.raveline.estudosnovos.R;
 
 public class MainActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
@@ -126,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(MainActivity.this, "Amante, digo, amiguinha!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Não!", Toast.LENGTH_SHORT).show();
                         yasminId.setChecked(true);
                     }
                 });

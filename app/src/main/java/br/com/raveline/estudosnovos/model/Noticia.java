@@ -1,4 +1,4 @@
-package model;
+package br.com.raveline.estudosnovos.model;
 
 import android.widget.ImageView;
 

@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CardViewActivity"></activity>
-        <activity android:name=".RecyclerViewActivity" />
-        <activity android:name=".ListViewAcitivity" />
-        <activity android:name=".CalculadoraPorcentagem" />
-        <activity android:name=".ProgressBarsActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.CardViewActivity"></activity>
+        <activity android:name=".activities.RecyclerViewActivity" />
+        <activity android:name=".activities.ListViewAcitivity" />
+        <activity android:name=".activities.CalculadoraPorcentagem" />
+        <activity android:name=".activities.ProgressBarsActivity" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

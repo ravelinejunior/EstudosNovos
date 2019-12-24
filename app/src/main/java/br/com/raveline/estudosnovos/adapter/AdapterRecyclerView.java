@@ -1,6 +1,5 @@
 package br.com.raveline.estudosnovos.adapter;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import br.com.raveline.estudosnovos.R;
-import model.Noticia;
+import br.com.raveline.estudosnovos.model.Noticia;
 
 public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerView.MyViewHolder> {
 

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#76000000"
-    tools:context=".CalculadoraPorcentagem">
+    android:background="#B71C1C"
+    tools:context=".activities.CalculadoraPorcentagem">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/valor_inserido_id_calculadora"
@@ -58,8 +58,8 @@
                 android:id="@+id/seekBar_desconto_id"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:max="100"
-                android:layout_marginLeft="8dp"/>
+                android:layout_marginLeft="8dp"
+                android:max="100" />
         </LinearLayout>
 
         <LinearLayout
