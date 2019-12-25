@@ -1,5 +1,6 @@
 package br.com.raveline.estudosnovos.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -12,13 +13,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.Serializable;
 import java.util.List;
 
 import br.com.raveline.estudosnovos.R;
+import br.com.raveline.estudosnovos.activities.ListViewAcitivity;
 import br.com.raveline.estudosnovos.activities.PassandoDadosActivity;
 import br.com.raveline.estudosnovos.model.PostagensCardView;
 
-public class AdapterCardViewRecycler extends RecyclerView.Adapter<AdapterCardViewRecycler.MyViewHolder> {
+public class AdapterCardViewRecycler extends RecyclerView.Adapter<AdapterCardViewRecycler.MyViewHolder> implements Serializable {
 
     private List<PostagensCardView> postagensCardViewsList;
     private Context context;
@@ -59,9 +62,9 @@ public class AdapterCardViewRecycler extends RecyclerView.Adapter<AdapterCardVie
         public void onClick(View v) {
 
             Intent i = new Intent(context, PassandoDadosActivity.class);
-            i.putExtra("descricaoHora",descricao);
-            i.putExtra("imagemCardView",imagem);
-            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK).putExtra("descricaoHora",descricao);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK).putExtra("imagemCardView",imagem);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK).putExtra("nomeUsuario",pList.getNomeUsuario());
             context.startActivity(i);
         }
     });

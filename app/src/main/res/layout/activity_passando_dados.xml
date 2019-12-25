@@ -8,15 +8,18 @@
 
     <ImageView
         android:id="@+id/imagem_id_passandoDados"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/fallen"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,9 +28,26 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
         android:padding="4dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagem_id_passandoDados" />
+
+    <TextView
+        android:id="@+id/nome_usuario_id_passandoDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="User"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imagem_id_passandoDados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

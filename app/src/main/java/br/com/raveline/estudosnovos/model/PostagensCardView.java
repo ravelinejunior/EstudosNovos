@@ -1,6 +1,8 @@
 package br.com.raveline.estudosnovos.model;
 
-public class PostagensCardView {
+import java.io.Serializable;
+
+public class PostagensCardView implements Serializable {
 
     private int imagemPostagens;
     private String nomeUsuario;

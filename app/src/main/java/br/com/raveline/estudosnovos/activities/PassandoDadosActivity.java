@@ -13,6 +13,7 @@ import br.com.raveline.estudosnovos.R;
 public class PassandoDadosActivity extends AppCompatActivity {
     private ImageView imagemPassandodados;
     private TextView descricaoPassandoDados;
+    private TextView nomeUsuarioPassandoDados;
 
 
     @Override
@@ -21,15 +22,19 @@ public class PassandoDadosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_passando_dados);
         imagemPassandodados = findViewById(R.id.imagem_id_passandoDados);
         descricaoPassandoDados = findViewById(R.id.descricao_passandoDados_id);
+        nomeUsuarioPassandoDados = findViewById(R.id.nome_usuario_id_passandoDados);
 
-        Bundle b = new Bundle();
+        //recuperando dados de outra activity
+        Bundle b = getIntent().getExtras();
         int imagem = b.getInt("imagemCardView",R.drawable.fototarde);
-       String descricao =  b.getString("descricaoHora","Teste");
+        String descricao =  b.getString("descricaoHora","Teste");
+        String nomeUsuario = b.getString("nomeUsuario","Usuario");
 
        descricaoPassandoDados.setText(descricao);
-        Log.d("imagem",imagemPassandodados.getDrawable().getCurrent().toString());
        imagemPassandodados.setImageResource(imagem);
-       Log.d("descricao",descricaoPassandoDados.getText().toString());
+       nomeUsuarioPassandoDados.setText(nomeUsuario);
+
+
 
     }
 }
