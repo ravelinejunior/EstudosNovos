@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.CardViewActivity"></activity>
+        <activity android:name=".activities.PassandoDadosActivity"></activity>
+        <activity android:name=".activities.CardViewActivity" />
         <activity android:name=".activities.RecyclerViewActivity" />
         <activity android:name=".activities.ListViewAcitivity" />
         <activity android:name=".activities.CalculadoraPorcentagem" />

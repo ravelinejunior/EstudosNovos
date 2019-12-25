@@ -25,7 +25,7 @@ public class CardViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_card_view);
         recyclerViewCardView = findViewById(R.id.recyclerView_cardview_id);
 
-        AdapterCardViewRecycler adapterCardViewRecycler = new AdapterCardViewRecycler(postagensCardViewList);
+        AdapterCardViewRecycler adapterCardViewRecycler = new AdapterCardViewRecycler(postagensCardViewList,getApplicationContext());
 
         //configurar layout de recycler view
 
@@ -46,9 +46,6 @@ public class CardViewActivity extends AppCompatActivity {
 
         //definindo o adapter
         this.preparandoPostagens();
-
-
-
 
     }
 
