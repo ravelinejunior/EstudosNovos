@@ -1,9 +1,12 @@
 package br.com.raveline.estudosnovos.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,6 +19,7 @@ public class PassandoDadosActivity extends AppCompatActivity {
     private TextView descricaoPassandoDados;
     private TextView nomeUsuarioPassandoDados;
     private TextView noticiaPassandoDados;
+    private Button botaoIniciarFragments;
 
 
     @Override
@@ -26,6 +30,7 @@ public class PassandoDadosActivity extends AppCompatActivity {
         descricaoPassandoDados = findViewById(R.id.descricao_passandoDados_id);
         nomeUsuarioPassandoDados = findViewById(R.id.nome_usuario_id_passandoDados);
         noticiaPassandoDados = findViewById(R.id.noticia_id_passandoDados);
+        botaoIniciarFragments = findViewById(R.id.botao_tela_fragments);
 
         //recuperando dados de outra activity
         Bundle b = getIntent().getExtras();
@@ -39,6 +44,14 @@ public class PassandoDadosActivity extends AppCompatActivity {
        imagemPassandodados.setImageResource(imagem);
        nomeUsuarioPassandoDados.setText(nomeUsuario);
        noticiaPassandoDados.setText(noticiaPassandoDadosString);
+
+       botaoIniciarFragments.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent i = new Intent(getApplicationContext(), FragmentsActivity.class);
+               startActivity(i);
+           }
+       });
 
 
 

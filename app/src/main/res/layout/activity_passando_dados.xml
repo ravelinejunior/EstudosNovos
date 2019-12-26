@@ -66,4 +66,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/descricao_passandoDados_id"
         app:layout_constraintTop_toBottomOf="@+id/descricao_passandoDados_id" />
+
+    <Button
+        android:id="@+id/botao_tela_fragments"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tela de Fragments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticia_id_passandoDados" />
 </androidx.constraintlayout.widget.ConstraintLayout>
