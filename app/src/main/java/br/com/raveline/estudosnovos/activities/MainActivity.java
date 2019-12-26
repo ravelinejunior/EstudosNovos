@@ -16,8 +16,9 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputLayout;
 
 import br.com.raveline.estudosnovos.R;
+import br.com.raveline.estudosnovos.model.Noticia;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
     private RadioGroup radioGroup;
     private RadioButton fernandaId;
     private RadioButton italoId;
@@ -73,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
 
 
     }

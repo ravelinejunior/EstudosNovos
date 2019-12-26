@@ -62,7 +62,7 @@
                 app:srcCompat="@android:drawable/ic_lock_lock" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/bloquear_imagem_id_adapter_cardView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
