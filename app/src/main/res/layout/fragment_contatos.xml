@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#9A880E4F"
     tools:context=".fragments.ContatosFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -18,7 +18,7 @@
 
     <Button
         android:id="@+id/botao_snackBar_fragment_contatos"
-        style="@android:style/Widget.Material.Light.Button.Inset"
+        style="@android:style/Widget.Material.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="160dp"

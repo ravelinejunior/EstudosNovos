@@ -37,7 +37,7 @@ public class CardViewActivity extends AppCompatActivity {
         //layoutManagerCardView.setOrientation(RecyclerView.HORIZONTAL);
 
         //PASSANDO COMO GRID VIEW
-       // RecyclerView.LayoutManager layoutManagerCardView = new GridLayoutManager(this,1);
+        //RecyclerView.LayoutManager layoutManagerCardView = new GridLayoutManager(this,1);
 
         recyclerViewCardView.setLayoutManager(layoutManagerCardView);
         //manter o layout com tamanho estatico

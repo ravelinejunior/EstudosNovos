@@ -162,4 +162,18 @@
         app:layout_constraintTop_toBottomOf="@+id/calculador_id_activity"
         app:layout_constraintVertical_bias="0.088" />
 
+    <Button
+        android:id="@+id/botao_floating_actionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="FloatingAction Bar"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView_id"
+        app:layout_constraintEnd_toEndOf="@+id/calculador_id_activity"
+        app:layout_constraintStart_toStartOf="@+id/calculador_id_activity"
+        app:layout_constraintTop_toTopOf="@+id/cardView_id" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
