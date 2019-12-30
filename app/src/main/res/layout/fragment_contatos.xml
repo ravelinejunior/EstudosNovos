@@ -9,10 +9,20 @@
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/texto_contatos_fragment_id"
+        style="@android:style/Widget.TextView.PopupMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="30sp"
         android:gravity="center_vertical|center_horizontal"
-        android:text="Contatos" />
+        android:text="Contatos"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao_snackBar_fragment_contatos"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="410dp"
+        android:text="SnackBar" />
 
 </FrameLayout>
